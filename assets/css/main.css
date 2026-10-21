@@ -12,7 +12,7 @@ header{
     gap: 1rem;
     color: var(--color-secondary);
     z-index: 1;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 main{
     flex-grow: 1;
@@ -26,6 +26,7 @@ h1{
     text-align: center;
     color: white;
     transform: translateY(20%);
+    font-weight: 500;
 }
 h1::before{
     content: 'Pikachu';
@@ -56,8 +57,58 @@ h1::before{
     font-size: 10.5vw;
     text-align: center;
     color: var(--color-secondary);
+    text-wrap: nowrap;
 }
 
 .hero-container p{
     display: none;
+}
+.hero-container a{
+    width: 100%;
+    height: 100px;
+    text-decoration: none;
+    background-color: var(--color-secondary);
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+@media (min-width: 768px){
+    h1 {
+        transform: translateY(10%);
+    }
+    .pikachu {
+        top: 48%;
+        width: 65vw;
+    }
+    .hero-container p{
+        display: block;
+        font-size: 1.5rem;
+        text-align: center;
+        color: var(--color-secondary);
+    }
+}
+@media (min-width: 1024px) {
+    body {
+        padding: 32px 70px;
+    }
+    h1{
+        font-size: 20vw;
+        transform: translateY(0%);
+    }
+    .hero-container{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .hero-container div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 500px;
+    }
 }
