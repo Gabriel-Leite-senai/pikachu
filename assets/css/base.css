@@ -1,0 +1,10 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --color-primary: #f5cf06;
+    --color-secondary: #8E4106;
+    --font-family: 'Righteous', sans-serif;
+}
